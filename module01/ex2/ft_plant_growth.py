@@ -23,8 +23,8 @@ def ft_plant_growth():
         print(f"---DAY {i}---")
         plant.grow()
         plant.age(i)
-        print(f"{plant.name}: {plant.height}cm, {plant.days} days old!")
-    print(f"growth : {plant.height - height}")
+        print(f"{plant.name}: {round(plant.height,1)}cm, {plant.days} days old!")
+    print(f"growth : {round(plant.height - height,1)}")
 
 def main():
     ft_plant_growth()
